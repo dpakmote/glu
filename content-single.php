@@ -3,10 +3,12 @@
  * @package glu
  */
 ?>
+		<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<div class="entry-meta">
 			<?php the_time('F jS, Y'); ?>
 		</div><!-- .entry-meta -->
+		</header>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
