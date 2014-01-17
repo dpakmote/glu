@@ -118,3 +118,14 @@ wp_deregister_style( 'cleaner-gallery' );
     		$html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
     		return $html;
 	}
+
+/** * Attach a class to linked images' parent anchors * e.g. a img => a.img img */
+add_filter('the_content', 'addlightboxrel_replace');
+function addlightboxrel_replace ($content)
+{	global $post;
+	$pattern = "/<a(.*?)href=('|\")(.*?).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>/i";
+  	$replacement = '<a$1class="image-enlarge" href=$2$3.$4$5$6 />';
+    $content = preg_replace($pattern, $replacement, $content);
+	$content = str_replace("%LIGHTID%", $post->ID, $content);
+    return $content;
+}
