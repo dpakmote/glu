@@ -14,13 +14,13 @@
 <?php if ( is_search() ) : // Only display Excerpts for Search ?>
 <div class="entry-summary">
 	<?php the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'glu' ) ); ?>
-	<a class="read-more" href="<?php the_permalink(); ?>" rel="bookmark">Continue Reading</a>
+	<a class="more forward" href="<?php the_permalink(); ?>" rel="bookmark">Continue Reading</a>
 
 </div><!-- .entry-summary -->
 <?php else : ?>
 <div class="entry-content">
 	<?php the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'glu' ) ); ?>
-	<a class="read-more" href="<?php the_permalink(); ?>" rel="bookmark">Continue Reading</a>
+	<a class="more forward" href="<?php the_permalink(); ?>" rel="bookmark">Continue Reading</a>
 	<?php
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . __( 'Pages:', 'glu' ),

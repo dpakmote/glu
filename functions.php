@@ -129,3 +129,5 @@ function addlightboxrel_replace ($content)
 	$content = str_replace("%LIGHTID%", $post->ID, $content);
     return $content;
 }
+/** * Disable default gallery styling */
+add_filter( 'use_default_gallery_style', '__return_false' );

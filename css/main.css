@@ -11,7 +11,7 @@ body { font-size: 1.1em; line-height: 1.5em; }
 
 hr { display: block; height: 1px; border-bottom: 1px dotted #aaa; border-top: none; margin: 10px 0; }
 
-img { vertical-align: middle; }
+img { vertical-align: middle; border: none; }
 
 fieldset { border: 0; margin: 0; padding: 0; }
 
@@ -78,19 +78,23 @@ article ul li:before { content: '\2014'; color: #c13833; font-weight: bold; posi
 
 .entry-header { margin-bottom: 20px; }
 
-.read-more { margin-bottom: 30px; display: block; font-weight: normal; text-transform: uppercase; font-size: .8em; }
+.more { margin-bottom: 30px; display: block; font-weight: normal; text-transform: uppercase; font-size: .8em; }
 
-.read-more:after { content: "\279D"; margin-left: 5px; }
+.forward:after { content: "\21E2"; margin-left: 5px; }
+
+.back:before { content: "\21E0"; margin-right: 5px; }
 
 .team { display: block; overflow: auto; }
 
-.team dt, .team dd { float: left; display: inline-block; }
+.team h2, .team p { margin-left: 150px; }
 
-.team dd { margin-left: 150px; }
+.team img { margin-left: -150px; position: relative; }
 
-.team dt { width: 130px; }
+.gallery { margin-top: 8px; }
 
-.gallery img { border: none; }
+.gallery img { margin: 4px 0; }
+
+.gallery dl { float: left; padding-right: 5px; margin: 0; }
 
 .alignleft { float: left; margin: 0px 15px 10px 0; }
 
@@ -205,15 +209,15 @@ button::-moz-focus-inner { padding: 0; border: 0; }
 
 .mfp-arrow-left { left: 0; }
 
-.mfp-arrow-left:after, .mfp-arrow-left .mfp-a { border-right: 17px solid #c2986d; margin-left: 31px; }
+.mfp-arrow-left:after, .mfp-arrow-left .mfp-a { border-right: 17px solid #c13833; margin-left: 31px; }
 
-.mfp-arrow-left:before, .mfp-arrow-left .mfp-b { margin-left: 25px; border-right: 27px solid #c2986d; }
+.mfp-arrow-left:before, .mfp-arrow-left .mfp-b { margin-left: 25px; border-right: 27px solid #c13833; }
 
 .mfp-arrow-right { right: 0; }
 
-.mfp-arrow-right:after, .mfp-arrow-right .mfp-a { border-left: 17px solid #c2986d; margin-left: 39px; }
+.mfp-arrow-right:after, .mfp-arrow-right .mfp-a { border-left: 17px solid #c13833; margin-left: 39px; }
 
-.mfp-arrow-right:before, .mfp-arrow-right .mfp-b { border-left: 27px solid #c2986d; }
+.mfp-arrow-right:before, .mfp-arrow-right .mfp-b { border-left: 27px solid #c13833; }
 
 .mfp-iframe-holder { padding-top: 40px; padding-bottom: 40px; }
 

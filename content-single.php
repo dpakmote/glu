@@ -4,6 +4,7 @@
  */
 ?>
 		<header class="entry-header">
+		<a class="more back" href="http://glu.org.in/updates" rel="bookmark">Updates</a>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<div class="entry-meta">
 			<?php the_time('F jS, Y'); ?>
